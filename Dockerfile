@@ -43,7 +43,7 @@ curl -LO https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz && \
 tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz && \
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc  && \
 #docker-ce
-apt-get install -y \
+apt-get update && apt-get install -y \
 apt-transport-https \
 ca-certificates \
 curl \
